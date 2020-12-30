@@ -549,10 +549,10 @@
       <ul>
         <li><a href="#striped-rows">條紋行</a></li>
         <li><a href="#hoverable-rows">可滑入行</a></li>
-        <li><a href="#active-tables">啟用表格</a></li>
+        <li><a href="#active-tables">表格啟用</a></li>
       </ul>
     </li>
-    <li><a href="#how-do-the-variants-and-accented-tables-work">變數和強調表格如何運作？</a></li>
+    <li><a href="#how-do-the-variants-and-accented-tables-work">變數和表格強調如何運作？</a></li>
     <li><a href="#table-borders">表格邊框</a>
       <ul>
         <li><a href="#bordered-tables">帶框的表格</a></li>
@@ -587,7 +587,7 @@
 
         <h2 id="overview">概述</h2>
 <p>由於 <code>&lt;table&gt;</code> 橫跨其他第三方套件廣泛的使用，像是 calendars 和 date pickers，因此<strong>可選擇</strong>使用 Bootstrap 的表格。
-在任何 <code>&lt;table&gt;</code> 加上基本類別 <code>.table</code>，接著使用我們的可選修飾類別或是客製化樣式進行擴展。所有表格樣式在 Bootstrap 中都不會繼承，意味著巢狀表格的樣式都是獨立於父表格。</p>
+在任何 <code>&lt;table&gt;</code> 加上基本類別 <code>.table</code>，接著使用我們的可選修飾類別或是自定義樣式進行擴展。所有表格樣式在 Bootstrap 中都不會繼承，意味著巢狀表格的樣式都是獨立於父表格。</p>
 <p>使用最基本的表格排版，以下是基本的 <code>.table</code> 在 Bootstrap 中的外觀。</p>
 <div class="bd-example">
   <table class="table">
@@ -922,7 +922,7 @@
 </div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;table table-dark table-hover&#34;</span><span class="p">&gt;</span>
   ...
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre></div>
-<p>這些可懸停行也可以和帶有條紋的變量結合使用</p>
+<p>這些可滑入行也可以和條紋行的變數結合使用。</p>
 <div class="bd-example">
   <table class="table table-striped table-hover">
       <thead>
@@ -957,7 +957,7 @@
 </div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">table</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;table table-striped table-hover&#34;</span><span class="p">&gt;</span>
   ...
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span></code></pre></div>
-<h3 id="active-tables">啟用表格</h3>
+<h3 id="active-tables">表格啟用</h3>
 <p>透過 <code>.table-active</code> 類別突顯表格行或單獨的儲存格。</p>
 <div class="bd-example">
   <table class="table">
@@ -1057,8 +1057,8 @@
     <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</code></pre></div><h2 id="how-do-the-variants-and-accented-tables-work">變數和強調表格如何運作？</h2>
-<p>對於強調表格（<a href="#striped-rows">條紋行</a>, <a href="#hoverable-rows">可滑入行</a>, 以及 <a href="#active-tables">啟用表格</a>），我們使用了一些技巧來使這些效果適用於所有<a href="#variants">變數</a>：</p>
+</code></pre></div><h2 id="how-do-the-variants-and-accented-tables-work">變數和表格強調如何運作？</h2>
+<p>對於表格強調（<a href="#striped-rows">條紋行</a>, <a href="#hoverable-rows">可滑入行</a>, 以及 <a href="#active-tables">啟用表格</a>），我們使用了一些技巧來使這些效果適用於所有<a href="#variants">變數</a>：</p>
 <ul>
 <li>我們首先使用 <code>--bs-table-bg</code> 屬性設定單元格的背景。所有變數都加上該自定義屬性使單元格有色彩。如此若將半透明的顏色用作表格背景，我們就​​不會遇到麻煩。</li>
 <li>然後，我們在單元格上使用 <code>background-image: linear-gradient(var(--bs-table-accent-bg), var(--bs-table-accent-bg));</code> 增加漸變，在指定的上層使用 <code>background-color</code>。由於 <code>--bs-table-accent-bg</code> 預設是透明的，因此預設就具有不可見的透明線性漸變。</li>
@@ -1360,7 +1360,7 @@
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 </code></pre></div><h2 id="nesting">巢狀</h2>
-<p>巢狀表格不會繼承邊框樣式，active 的表格樣式以及表格變數。</p>
+<p>巢狀表格不會繼承邊框樣式，啟用樣式以及表格變數。</p>
 <div class="bd-example">
 <table class="table table-striped table-bordered">
   <thead>
@@ -1434,7 +1434,7 @@
   <span class="p">&lt;/</span><span class="nt">tbody</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 </code></pre></div><h2 id="how-nesting-works">巢狀如何運作</h2>
-<p>為了防止 <em>任何</em> 樣式滲透到巢狀表格，我們在 CSS 中使用子選取器 (<code>&gt;</code>) 。由於我們需要針對所有在 <code>thead</code>、 <code>tbody</code> 和 <code>tfoot</code> 中的 <code>td</code> 和 <code>th</code>，若沒有它我們的階層會變得很多。因此，我們使用看起來很奇怪的 <code>.table &gt; :not(caption) &gt; * &gt; *</code> 選擇器來定位所有 <code>.table</code> 中的 <code>td</code> 和 <code>th</code>，但是沒有任何巢狀表格。</p>
+<p>為了防止 <em>任何</em> 樣式滲透到巢狀表格，我們在 CSS 中使用子選取器 (<code>&gt;</code>); 由於我們需要針對所有在 <code>thead</code>、 <code>tbody</code> 和 <code>tfoot</code> 中的 <code>td</code> 和 <code>th</code>，若沒有它我們的階層會變得很多。因此，我們使用看起來很奇怪的 <code>.table &gt; :not(caption) &gt; * &gt; *</code> 選擇器來定位所有 <code>.table</code> 中的 <code>td</code> 和 <code>th</code>，但是沒有任何巢狀表格。</p>
 <p>請注意，如果直接將 <code>&lt;tr&gt;</code> 作為表格的子代，則預設會將 <code>&lt;tr&gt;</code> 包裝在 <code>&lt;tbody&gt;</code> 中，從而使我們的選擇器按預期工作。</p>
 <h2 id="anatomy">結構</h2>
 <h3 id="table-head">表頭</h3>

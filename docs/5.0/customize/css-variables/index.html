@@ -587,9 +587,9 @@
 </code></pre></div><h2 id="component-variables">元件變數</h2>
 <p>我們也開始將自定義屬性用來當做各元件的局部變數。如此一來我們可以減少編譯後的 CSS，確保樣式不會在巢狀表格之類的地方繼承，並在 Sass 編譯後允許 Bootstrap 元件進行一些基本的重新樣式化和擴展。</p>
 <p>請看我們的表格文件，以 <a href="/docs/5.0/content/tables/#how-do-the-variants-and-accented-tables-work">了解我們如何使用 CSS 變數</a>.</p>
-<p>我們也在網格中使用 CSS 變數（主要用於 guttters 上），而將來還會有更多的元件使用。</p>
+<p>我們也在網格中使用 CSS 變數（主要用於 gutters 上），而將來還會有更多的元件使用。</p>
 <h2 id="examples">範例</h2>
-<p>CSS 變數提供了與 Sass 變數相似的靈活性，但無需先進行編譯其可供瀏覽器運作。舉例來說，在這裡我們使用 CSS 變數重置頁面的字體和鏈接樣式。</p>
+<p>CSS 變數提供了與 Sass 變數相似的靈活性，但無需先進行編譯其可供瀏覽器運作。舉例來說，在這裡我們使用 CSS 變數重置頁面的字體和連結樣式。</p>
 <div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
   <span class="k">font</span><span class="p">:</span> <span class="mi">1</span><span class="kt">rem</span><span class="o">/</span><span class="mf">1.5</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">bs</span><span class="o">-</span><span class="n">font</span><span class="o">-</span><span class="kc">sans-serif</span><span class="p">);</span>
 <span class="p">}</span>

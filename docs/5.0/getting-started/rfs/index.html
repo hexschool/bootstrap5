@@ -560,10 +560,10 @@
         
 
         <h2 id="what-is-rfs">什麼是 RFS?</h2>
-<p>Bootstrap 的輔助項目 <a href="https://github.com/twbs/rfs/tree/v9.0.3">RFS</a> 是一個單元的縮放調整引擎，最初是為了調整字體大小而開發的 (因此縮寫為 Responsive Font Sizes)。如今 RFS 能夠使用諸如 <code>margin</code>、<code>padding</code>、<code>border-radius</code>、甚至 <code>box-shadow</code> 之類的單位值來縮放大多數 CSS 屬性。</p>
-<p>該機制會根據瀏覽器窗口的尺寸自動計算適當的值。它將使用 rem 和窗口單位組合編譯為 <code>calc()</code> 的函數，啟用響應式的縮放行為。</p>
+<p>Bootstrap 的附帶項目 <a href="https://github.com/twbs/rfs/tree/v9.0.3">RFS</a> 是一個單元的縮放調整引擎，最初是為了調整字體大小而開發的 (因此縮寫為 Responsive Font Sizes)。如今 RFS 能夠使用單位數值來縮放大多數的 CSS 屬性，諸如 <code>margin</code>、<code>padding</code>、<code>border-radius</code>、甚至 <code>box-shadow</code> 等。</p>
+<p>該機制會根據瀏覽器視窗的尺寸自動計算適當的值。它將使用 rem 和視窗單位組合編譯為 <code>calc()</code> 的函數，啟用響應式的縮放行為。</p>
 <h2 id="using-rfs">使用 RFS</h2>
-<p>mixin 包含在 Bootstrap 中，包含 Bootstrap 的這些 mixin 將可以使用 <code>scss</code>。如果有需要也可以 <a href="https://github.com/twbs/rfs/tree/v9.0.3#installation">獨立安裝</a> RFS。</p>
+<p>mixin 被包含在 Bootstrap 中，且只要包含 Bootstrap 的 <code>scss</code> 就可以使用這些 <code>mixin</code>。如果有需要也可以 <a href="https://github.com/twbs/rfs/tree/v9.0.3#installation">獨立安裝</a> RFS。</p>
 <h3 id="using-the-mixins">使用 mixins</h3>
 <p><code>rfs()</code> mixin 具有 <code>font-size</code>、<code>margin</code>、<code>margin-top</code>、<code>margin-right</code>、<code>margin-bottom</code>、<code>margin-left</code>、<code>padding</code>、<code>padding-top</code>、 <code>padding-right</code>、<code>padding-bottom</code> 和 <code>padding-left</code>。 可以參考以下範例，了解原始的 Sass 和已編譯的 CSS。</p>
 <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nc">.title</span> <span class="p">{</span>
@@ -589,8 +589,8 @@
 </code></pre></div><h3 id="using-the-functions">使用函式</h3>
 <p>當你不想使用 include 時，這裡還有二個函式：</p>
 <ul>
-<li><code>rfs-value()</code> 如果傳遞了px 值，<code>rem</code> 則將值轉換為 rem 值，在其他情況下，它將返回相同的結果。</li>
-<li><code>rfs-fluid-value()</code> 如果屬性需要重新縮放，則把值返回 fluid 版本。</li>
+<li><code>rfs-value()</code> 會將數值轉換為 <code>rem</code> 值，如果傳遞進函式的數值為 <code>px</code> 的話。在其他情況下，它將返回相同的結果。</li>
+<li><code>rfs-fluid-value()</code> 會返回 fluid 版本的數值，如果屬性需要重新縮放的話。</li>
 </ul>
 <p>在此範例中，我們使用 Bootstrap 內建的 <a href="/docs/5.0/layout/breakpoints/">響應式斷點 mixins</a> 之一來應用在 <code>lg</code> 斷點.</p>
 <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nc">.selector</span> <span class="p">{</span>

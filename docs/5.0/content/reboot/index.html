@@ -588,7 +588,7 @@
 <h2 id="page-defaults">頁面預設</h2>
 <p>為了提供更好的整體頁面預設值而更新 <code>&lt;html&gt;</code> 和 <code>&lt;body&gt;</code> 元素。具體而言：</p>
 <ul>
-<li>在每個元素上設定全域性的 <code>box-sizing</code>，包括 <code>*::before</code> 和 <code>*::after</code> 以及 <code>border-box</code>。這確保元素不會因為 padding 或 border 超過元素宣告的寬度數值。
+<li>在每個元素上設定全域性的 <code>box-sizing</code>，包括 <code>*::before</code> 和 <code>*::after</code> ，將它們設為 <code>border-box</code>。這確保元素不會因為 padding 或 border 超過元素宣告的寬度數值。
 <ul>
 <li>不在 <code>&lt;html&gt;</code> 上宣告基礎的 <code>font-size</code>，而是假定字體尺寸為 16px (瀏覽器預設)。 <code>font-size: 1rem</code> 被應用在 <code>&lt;body&gt;</code> 上，以利透過 media queries 做響應式縮放，同時尊重使用者的喜好。可以通過修改 <code>$font-size-root</code> 變數來覆蓋此瀏覽器的預設值。</li>
 </ul>
@@ -711,12 +711,12 @@
   </dl>
 </div>
 <h2 id="inline-code">行內程式碼</h2>
-<p>使用 <code>&lt;code&gt;</code> 來包覆行內片段的程式碼。確保轉譯 HTML 尖括號 。</p>
+<p>使用 <code>&lt;code&gt;</code> 來包覆行內片段的程式碼。請確保是用跳脫字元轉譯 HTML 尖括號 。</p>
 <div class="bd-example">
 For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 </div><div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html">For example, <span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span><span class="ni">&amp;lt;</span>section<span class="ni">&amp;gt;</span><span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span> should be wrapped as inline.</code></pre></div>
 <h2 id="code-blocks">程式碼區塊</h2>
-<p><code>&lt;pre&gt;</code> 用於多行的程式碼。再提醒一次，請確保程式碼中的任何尖括號有正確呈現。<code>&lt;pre&gt;</code> 移除 <code>margin-top</code> 以及使用 <code>rem</code> 作為 <code>margin-bottom</code> 的單位。</p>
+<p><code>&lt;pre&gt;</code> 用於多行的程式碼。再提醒一次，請確保程式碼中的任何尖括號有用跳脫字元進行轉譯。<code>&lt;pre&gt;</code> 移除 <code>margin-top</code> 以及使用 <code>rem</code> 作為 <code>margin-bottom</code> 的單位。</p>
 <div class="bd-example">
 <pre><code>&lt;p&gt;Sample text here...&lt;/p&gt;
 &lt;p&gt;And another line of sample text here...&lt;/p&gt;

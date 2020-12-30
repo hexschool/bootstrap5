@@ -565,14 +565,14 @@
 <p>匯入 <a href="/docs/5.0/getting-started/javascript/">Bootstrap 的 JavaScript</a> 在你專案的進入點加入下面這行 (通常是 index.js 或 app.js)：</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// 你可以指定所需要的插件
 </span><span class="c1"></span><span class="kr">import</span> <span class="p">{</span> <span class="nx">Tooltip</span><span class="p">,</span> <span class="nx">Toast</span><span class="p">,</span> <span class="nx">Popover</span> <span class="p">}</span> <span class="nx">from</span> <span class="s1">&#39;bootstrap&#39;</span><span class="p">;</span>
-</code></pre></div><p>另外，假設你只需要我們的一些插件，你可以根據需要 <strong>單獨匯入插件</strong> :</p>
+</code></pre></div><p>另外，假設你只需要我們的一些插件，你可以根據需要<strong>單獨匯入插件</strong> :</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="nx">Alert</span> <span class="nx">from</span> <span class="s1">&#39;bootstrap/js/dist/alert&#39;</span><span class="p">;</span>
 <span class="p">...</span>
-</code></pre></div><p>Bootstrap 取決於 <a href="https://popper.js.org/">Popper</a>，這些被定義為 <code>peerDependencies</code>。
+</code></pre></div><p>Bootstrap 需要 <a href="https://popper.js.org/">Popper</a>，這些被定義為 <code>peerDependencies</code>。
 這意味著你一定要記得加入到 <code>package.json</code> 使用 <code>npm install @popperjs/core</code>.</p>
 <h2 id="importing-styles">匯入樣式</h2>
 <h3 id="importing-precompiled-sass">匯入預編譯的 Sass</h3>
-<p>充分享受 Bootstrap 的潛力並依照您的需求進行客製化，使用原始檔案作為你編譯的部分內容。</p>
+<p>充分享受 Bootstrap 的潛力並依照您的需求進行自定義，使用原始檔案作為你編譯的部分內容。</p>
 <p>首先，創建您自己的 <code>_custom.scss</code> 並使用它來覆蓋 <a href="/docs/5.0/customize/sass/">自定義變數</a>。然後，使用你主要的 sass 文件導入你的自定義變數，接下來再載入 Bootstrap：</p>
 <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">&#34;custom&#34;</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">&#34;~bootstrap/scss/bootstrap&#34;</span><span class="p">;</span>

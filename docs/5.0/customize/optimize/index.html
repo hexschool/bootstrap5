@@ -543,7 +543,7 @@
           <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#lean-sass-imports">使用 Sass imports</a></li>
+    <li><a href="#lean-sass-imports">匯入 Sass 樣式</a></li>
     <li><a href="#lean-javascript">使用 JavaScript</a></li>
     <li><a href="#autoprefixer-browserslistrc">Autoprefixer .browserslistrc</a></li>
     <li><a href="#unused-css">未使用的 CSS</a></li>
@@ -558,7 +558,7 @@
       <div class="bd-content ps-lg-4">
         
 
-        <h2 id="lean-sass-imports">使用 Sass imports</h2>
+        <h2 id="lean-sass-imports">匯入 Sass 樣式</h2>
 <p>在您的資產庫使用 Sass 時，請確保僅通過 <code>@import</code> 添加所需的物件來優化 Bootstrap。您最大的優化可能來自 <code>bootstrap.scss</code> 中的 <code>Layout &amp; Components</code> 單元。</p>
 <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">// Configuration
 </span><span class="c1"></span><span class="k">@import</span> <span class="s2">&#34;functions&#34;</span><span class="p">;</span>
@@ -602,7 +602,7 @@
 
 <span class="c1">// Utilities
 </span><span class="c1"></span><span class="k">@import</span> <span class="s2">&#34;utilities/api&#34;</span><span class="p">;</span></code></pre></div>
-<p>如果您不使用元件，請將其註解調或完全刪除。例如，若您不使用輪播，請刪除該 import 來節省一些編譯後的 CSS 文件大小。請記住，Sass imports 間存在一些依賴關係，這可能會使省去文件資料量更加困難。</p>
+<p>如果您不使用元件，請將其註解或完全刪除。例如，若您不使用輪播，請刪除該 import 來節省一些編譯後的 CSS 文件大小。請記住，Sass imports 間存在一些依賴關係，這可能會使省去文件資料量更加困難。</p>
 <h2 id="lean-javascript">使用 JavaScript</h2>
 <p>Bootstrap 的 JavaScript 包含我們主要的 dist 文件（ <code>bootstrap.js</code> 與 <code>bootstrap.min.js</code> ），甚至也包括我們的主要依賴項（Popper）以及綑綁文件（ <code>bootstrap.bundle.js</code> 與 <code>bootstrap.bundle.min.js</code> ）。透過 Sass 進行自定義時，請確保已刪除相關的 JavaScript。</p>
 <p>例如，假設您正在使用自己的 JavaScript 綑綁程序，像是 Webpack 或 Rollup，則只需導入您計畫使用的 JavaScript。在下方的範例中，我們顯示了如何僅包含我們的 modal JavaScript：</p>
@@ -630,7 +630,7 @@
 </div>
 
 <h2 id="autoprefixer-browserslistrc">Autoprefixer .browserslistrc</h2>
-<p>Bootstrap 依賴 Autoprefixer 來自動添加瀏覽器前綴詞到特定的 CSS 屬性。前綴詞取決於 Bootstrap 根目的 <code>.browserslistrc</code> 文件。如果該瀏覽器或版本具有自己的前綴詞，自定義瀏覽器列表或重新編譯 Sass ，將自動從已編譯的 CSS 中刪除一些 CSS 。</p>
+<p>Bootstrap 依賴 Autoprefixer 來自動添加瀏覽器前綴詞到特定的 CSS 屬性。前綴詞取決於 Bootstrap 根目的 <code>.browserslistrc</code> 文件。如果該瀏覽器或版本具有自己的前綴詞，自定義瀏覽器列表或重新編譯 Sass 將自動從已編譯的 CSS 中刪除一些 CSS 。</p>
 <h2 id="unused-css">未使用的 CSS</h2>
 <p><em>本章節需要幫助，請考慮打開 PR。謝謝！</em></p>
 <p>雖然我們沒有將 <a href="https://github.com/FullHuman/purgecss">PurgeCSS</a> 與 Bootstrap 結合使用的案例，但仍有一些公開文件是有用的文章以及演練。以下是一些選項：</p>

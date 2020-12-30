@@ -572,12 +572,13 @@
 <h3 id="color-contrast">顏色對比</h3>
 <p>當前構成 Boostrap 預設的一些顏色 — 在整個框架內用於按鈕變化，警告變化，形式認證指示等 — 在淺色背景是 <em>不足夠</em> 的顏色對比 (如下為建議的 <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum">WCAG 2.1 顏色對比比例 4.5:1</a> 和 <a href="https://www.w3.org/TR/WCAG21/#non-text-contrast">WCAG 2.1 非顏色對比比例 3:1</a>)， 特別是在淺色背景下使用時。鼓勵作者們測試其特定的顏色用途，並在必要時手動修改/擴展這些預設顏色，以確保有足夠的顏色對比度。</p>
 <h3 id="visually-hidden-content">視覺上被隱藏的內容</h3>
-<p>應當在視覺上被隱藏，但應保持對螢幕閱讀器等輔助性的親和性內容，可以使用 <code>.visually-hidden</code> 的樣式隱藏。在需要同時向非視覺使用者傳遞額外的視覺資訊或提示 (比如通過使用顏色表示含義) 的情形中，這是非常有用的。</p>
+<p>應當在視覺上被隱藏，但應保持對螢幕閱讀器等輔助性的親和性內容，可以使用 <code>.visually-hidden</code> 的樣式隱藏。在需要同時向非視覺使用者傳遞額外的視覺資訊或提示 (比如通過使用顏色表示的含義) 的情形中，這是非常有用的。</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;text-danger&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;visually-hidden&#34;</span><span class="p">&gt;</span>Danger: <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
   This action is not reversible
 <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div><p>對於視覺上被隱藏的互動控制，比如傳統的 &ldquo;略過&rdquo; 連結，使用 <code>.visually-hidden-focusable</code> 的樣式隱藏。這樣會確保一旦被聚焦時 (樣會確保一旦被 focused)。<strong>注意， 與過去的版本中類似的 <code>.sr-only</code> 和 <code>.sr-only-focusable</code> 相比之下，Bootstrap 5&rsquo;s <code>.visually-hidden-focusable</code> 是獨立的樣式，不得與 <code>.visually-hidden</code> 樣式一起使用。</strong></p>
+</code></pre></div><p>對於視覺上被隱藏的互動控制，比如傳統的 &ldquo;略過&rdquo; 連結，使用 <code>.visually-hidden-focusable</code> 的樣式隱藏。這樣會確保互動控制一旦被聚焦時就會變成可視的(對於
+視覺正常的鍵盤使用者來說)。<strong>注意， 與過去的版本中類似的 <code>.sr-only</code> 和 <code>.sr-only-focusable</code> 相比之下，Bootstrap 5&rsquo;s <code>.visually-hidden-focusable</code> 是獨立的樣式，不得與 <code>.visually-hidden</code> 樣式一起使用。</strong></p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;visually-hidden-focusable&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#content&#34;</span><span class="p">&gt;</span>Skip to main content<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
 </code></pre></div><h3 id="reduced-motion">減少動態</h3>
 <p>Bootstrap 加入對於 <a href="https://drafts.csswg.org/mediaqueries-5/#prefers-reduced-motion"><code>prefers-reduced-motion</code> media feature</a> 的支援性。允許用戶指定減少動態的選項的瀏覽器/環境中，Bootstrap 中的大多數 CSS 轉換效果 (例如，打開或關閉互動視窗時) 將被禁用，和有意義的動畫 (例如微調器) 將會變慢。</p>

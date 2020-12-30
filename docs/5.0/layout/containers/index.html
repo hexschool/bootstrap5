@@ -668,14 +668,14 @@
   <span class="c">&lt;!-- Content here --&gt;</span>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div><h2 id="responsive-containers">響應式容器</h2>
-<p>使用響應式容器時將會保持在寬度 100%，直到達到指定斷點為止，接下來我們將針對每個較高的斷點設置 <code>max-width</code>。例如，<code>.container-sm</code> 的寬度為 100％，直到到達 <code>sm</code> 斷點之前，它將以 <code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code> 設置。</p>
+<p>使用響應式容器時將會保持在寬度 100%，直到達到指定斷點為止，接下來我們將針對每個較高的斷點設置 <code>max-width</code>。例如，<code>.container-sm</code> 在到達 <code>sm</code> 斷點之前的寬度都為 100％，之後它將以 <code>md</code>、<code>lg</code>、<code>xl</code> 和 <code>xxl</code> 設置。</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-sm&#34;</span><span class="p">&gt;</span>100% wide until small breakpoint<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-md&#34;</span><span class="p">&gt;</span>100% wide until medium breakpoint<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-lg&#34;</span><span class="p">&gt;</span>100% wide until large breakpoint<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-xl&#34;</span><span class="p">&gt;</span>100% wide until extra large breakpoint<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-xxl&#34;</span><span class="p">&gt;</span>100% wide until extra extra large breakpoint<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 </code></pre></div><h2 id="fluid-containers">流體容器</h2>
-<p>針對容器使用 <code>.container-fluid</code>, 跨越可視區域的整個寬度。</p>
+<p>針對容器使用 <code>.container-fluid</code>, 它將橫跨可視區域的整個寬度。</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;container-fluid&#34;</span><span class="p">&gt;</span>
   ...
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>

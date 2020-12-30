@@ -544,7 +544,7 @@
           <nav id="TableOfContents">
   <ul>
     <li><a href="#file-structure">檔案結構</a></li>
-    <li><a href="#importing">輸入</a></li>
+    <li><a href="#importing">匯入</a></li>
     <li><a href="#variable-defaults">預設變數</a></li>
     <li><a href="#maps-and-loops">Maps 與 loops</a>
       <ul>
@@ -587,8 +587,8 @@
 └── bootstrap/
     ├── js
     └── scss
-</code></pre></div><h2 id="importing">輸入</h2>
-<p>在您的 <code>custom.scss</code> 中，您將輸入 Bootstrap 的源 Sass 文件。您有兩個選擇：載入所有 Bootstrap 或僅載入您需要的部分。儘管知道我們的元件之間存有一些要求與依賴性，我們仍鼓勵採用後者的方法。而您仍需要為我們的插件添加一些 JavaScript。</p>
+</code></pre></div><h2 id="importing">匯入</h2>
+<p>在您的 <code>custom.scss</code> 中，您將匯入 Bootstrap 的源 Sass 文件。您有兩個選擇：載入所有 Bootstrap 或僅載入您需要的部分。儘管知道我們的元件之間存有一些要求與依賴性，我們仍鼓勵採用後者的方法。而您仍需要為我們的插件添加一些 JavaScript。</p>
 <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="c1">// Custom.scss
 </span><span class="c1">// Option A: Include all of Bootstrap
 </span><span class="c1"></span>
@@ -610,7 +610,7 @@
 <span class="k">@import</span> <span class="s2">&#34;../node_modules/bootstrap/scss/grid&#34;</span><span class="p">;</span>
 </code></pre></div><p>完成該設置後，您可以開始在您的 <code>custom.scss</code> 中修改任何 Sass 變數 與 maps。您也可以根據需求，在 <code>// Optional</code> 下新增 Bootstrap 的各個部分。我們建議在一開始便使用 <code>bootstrap.scss</code> 文件完整載入。</p>
 <h2 id="variable-defaults">預設變數</h2>
-<p>Bootstrap 的每個 Sass 變數都包含 <code>!default</code> 標誌，以便您在自己的 Sass 中覆蓋變數的預設值，而無需 Bootstrap 的原始碼。複製需要的變數並貼上，修改其數值，並刪除 <code>!default</code> 標誌。若已經分配好了變數，則他將不會被 Bootstrap 的預設值再度分配。</p>
+<p>Bootstrap 的每個 Sass 變數都包含 <code>!default</code> 標誌，讓您可以在自己的 Sass 中覆蓋變數的預設值，而無需更動 Bootstrap 的原始碼。複製需要的變數並貼上，修改其數值，並刪除 <code>!default</code> 標誌。若已經分配好了變數，則他將不會被 Bootstrap 的預設值再度分配。</p>
 <p>您可以在 <code>scss/_variables.scss</code> 中找到 Bootstrap 變數的完整列表。有些變數設置為 <code>null</code> ，除非在配置中被覆蓋，否則這些變數不會輸出其屬性。</p>
 <p>同一 Sass 文件中的變數可以在預設變數之前或之後覆蓋。但是，當覆蓋橫跨 Sass 文件時，您必須在導入 Bootstrap 的 Sass 文件之前進行覆蓋。</p>
 <p>以下是一個透過 npm 導入和編譯 Bootstrap 時，更改 <code>&lt;body&gt;</code> 中的 <code>background-color</code> 與 <code>color</code> ：</p>
@@ -620,7 +620,7 @@
 
 <span class="c1">// Bootstrap and its default variables
 </span><span class="c1"></span><span class="k">@import</span> <span class="s2">&#34;../node_modules/bootstrap/scss/bootstrap&#34;</span><span class="p">;</span>
-</code></pre></div><p>對 Bootstrap 中的任何變數進行必要的重複，包含以下的全局選項。</p>
+</code></pre></div><p>對 Bootstrap 中的任何變數進行必要的重複，包含以下的全域選項。</p>
 <h2 id="maps-and-loops">Maps 與 loops</h2>
 <p>Bootstrap 包括幾個 Sass maps，關鍵值使生成相關系列 CSS 更加容易。我們將 Sass maps 用於我們的色彩、網格斷點等。就像 Sass 變數一樣，全部的 Sass map 包含 <code>!default</code> 標誌且都可以被覆蓋與擴展。</p>
 <p>預設情況下，我們的一些 Sass maps 會合併為空集合。這樣做是為了輕鬆擴展已給定的 Sass map，但這樣做的代價是使從 map 上 <em>刪除</em> 項目變得更加困難。</p>

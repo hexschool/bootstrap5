@@ -543,7 +543,7 @@
           <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
           <nav id="TableOfContents">
   <ul>
-    <li><a href="#get-familiar">取得 familiar</a></li>
+    <li><a href="#get-familiar">如何熟悉</a></li>
     <li><a href="#required-html">必要的 HTML</a>
       <ul>
         <li><a href="#starter-template">基本模板</a></li>
@@ -551,10 +551,10 @@
       </ul>
     </li>
     <li><a href="#approach">方法</a></li>
-    <li><a href="#customize-from-source">從原始碼自訂</a>
+    <li><a href="#customize-from-source">從原始碼自定義</a>
       <ul>
-        <li><a href="#custom-rtl-values">自訂 RTL 數值</a></li>
-        <li><a href="#alternative-font-stack">備用字體代碼</a></li>
+        <li><a href="#custom-rtl-values">自定義 RTL 數值</a></li>
+        <li><a href="#alternative-font-stack">備用字體堆疊</a></li>
       </ul>
     </li>
     <li><a href="#the-breadcrumb-case">breadcrumb 麵包屑</a></li>
@@ -567,7 +567,7 @@
       <div class="bd-content ps-lg-4">
         
 
-        <h2 id="get-familiar">取得 familiar</h2>
+        <h2 id="get-familiar">如何熟悉</h2>
 <p>我們建議您先閱讀 <a href="/docs/5.0/getting-started/introduction/">入門指南頁面</a> 來熟悉 Bootstrap。讀完之後，請繼續閱讀此處以了解如何啟用RTL。</p>
 <p>你可能還需要閱讀 <a href="https://rtlcss.com/">RTLCSS 項目</a>，因為它為我們的 RTL 方法提供了動力。</p>
 <div class="bd-callout bd-callout-warning">
@@ -618,20 +618,20 @@
 <p>我們在 Bootstrap 中構建支援 RTL 的方法有兩個重要的選擇，這些選擇會影響我們編寫和使用 CSS 的方式：</p>
 <ol>
 <li>
-<p><strong>首先，我們決定使用 <a href="https://rtlcss.com/">RTLCSS</a> 項目進行構建。</strong> 這為我們提供了一些強大的功能，可用於管理 LTR 到 RTL 的更改和替代。它還允許我們從一個代碼庫構建兩個版本的 Bootstrap。</p>
+<p><strong>首先，我們決定使用 <a href="https://rtlcss.com/">RTLCSS</a> 項目進行構建。</strong> 這為我們提供了一些強大的功能，可用於管理從 LTR 轉向 RTL 的更改和替代。它還允許我們從一個程式庫構建兩個版本的 Bootstrap。</p>
 </li>
 <li>
-<p><strong>再來，我們將少數方向類重新採用命名為邏輯屬性方法。</strong> 藉由我們 flex 的通用類別，大多數已經與邏輯屬性進行了交換，它們替換了方向屬性如 <code>left</code> 和 <code>right</code> 被 <code>start</code> 和 <code>end</code> 取代了。這使得名稱的命名跟用值時會更合適。</p>
+<p>**再來，我們採用邏輯屬性方法，將少數的方向類別重新命名。**因為我們 flex 的通用類別，大多數的使用者都已經接觸過了邏輯屬性方法 - 它們將方向屬性如 <code>left</code> 和 <code>right</code> 取代為 <code>start</code> 和 <code>end</code>。這讓這些 class 名稱、用值更為適合 LTR 與 RTL。</p>
 </li>
 </ol>
 <p>例如，用 <code>.ms-3</code> 取代 <code>margin-left</code> 的 <code>.ml-3</code>。</p>
 <p>透過我們原始的 Sass 或已編譯的 CSS 去使用 RTL，與我們的預設的 LTR 應該沒有太大不同。</p>
-<h2 id="customize-from-source">從原始碼自訂</h2>
-<p>當涉及到 <a href="/docs/5.0/customize/sass/">customization</a> 時，首選的方法是使用 variables、maps、和 mixins。從編譯後的文件進行後處理，此方法也適用於 RTL。參考 <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">RTLCSS 如何運作</a>.</p>
-<h3 id="custom-rtl-values">自訂 RTL 數值</h3>
+<h2 id="customize-from-source">從原始碼自定義</h2>
+<p>當涉及到 <a href="/docs/5.0/customize/sass/">自定義</a> 時，首選的方法是使用 variables、maps、和 mixins。就算是從編譯後的文件進行後處理，此方法也適用於 RTL，參考 <a href="https://rtlcss.com/learn/getting-started/why-rtlcss/">RTLCSS 的運作方式</a>。</p>
+<h3 id="custom-rtl-values">自定義 RTL 數值</h3>
 <p>使用 <a href="https://rtlcss.com/learn/usage-guide/value-directives/">RTLCSS 數值指令</a>，可以從 variable 輸出不同的值給 RTL。例如，要減少整個 <code>$font-weight-bold</code> 代碼的權重，可以使用 <code>/*rtl: {value}*/</code> 語法：</p>
 <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nv">$font-weight-bold</span><span class="o">:</span> <span class="mi">700</span> <span class="si">#{</span><span class="cm">/* rtl:600 </span><span class="c">*/</span><span class="si">}</span> <span class="nv">!default</span><span class="p">;</span>
-</code></pre></div><p>對於預設的 CSS and RTL CSS 輸出以下內容：</p>
+</code></pre></div><p>將會對預設的 CSS and RTL CSS 輸出以下內容：</p>
 <div class="highlight"><pre class="chroma"><code class="language-css" data-lang="css"><span class="c">/* bootstrap.css */</span>
 <span class="nt">dt</span> <span class="p">{</span>
   <span class="k">font-weight</span><span class="p">:</span> <span class="mi">700</span> <span class="c">/* rtl:600 */</span><span class="p">;</span>
@@ -641,9 +641,9 @@
 <span class="nt">dt</span> <span class="p">{</span>
   <span class="k">font-weight</span><span class="p">:</span> <span class="mi">600</span><span class="p">;</span>
 <span class="p">}</span>
-</code></pre></div><h3 id="alternative-font-stack">備用字體代碼</h3>
-<p>如果您使用的是自定義字體，請注意，並非所有字體都支持非拉丁字母。 將歐洲語系轉換為阿拉伯語系，你可能需要在在字體代碼中使用 <code>/*rtl:insert: {value}*/</code> 來修改字體的名稱
-例如，要將 LTR 的 <code>Helvetica Neue Webfont</code> 轉換為 RTL 的 <code>Helvetica Neue Arabic</code>，如以下代碼所示：</p>
+</code></pre></div><h3 id="alternative-font-stack">備用字體堆疊</h3>
+<p>如果您使用的是自定義字體，請注意，並非所有字體都支持非拉丁字母。為了將歐洲語系轉換為阿拉伯語系，你可能需要在在字體堆疊中使用 <code>/*rtl:insert: {value}*/</code> 來修改字體的名稱。
+例如，要將 LTR 的 <code>Helvetica Neue Webfont</code> 轉換為 RTL 的 <code>Helvetica Neue Arabic</code>，Sass 程式碼將如以下所示：</p>
 <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nv">$font-family-sans-serif</span><span class="o">:</span>
   <span class="n">Helvetica</span> <span class="n">Neue</span> <span class="si">#{</span><span class="s2">&#34;/* rtl:insert:Arabic */&#34;</span><span class="si">}</span><span class="o">,</span>
   <span class="c1">// Safari for macOS and iOS (San Francisco)</span>
@@ -663,7 +663,7 @@
   <span class="c1">// Emoji fonts</span>
   <span class="s2">&#34;Apple Color Emoji&#34;</span><span class="o">,</span> <span class="s2">&#34;Segoe UI Emoji&#34;</span><span class="o">,</span> <span class="s2">&#34;Segoe UI Symbol&#34;</span><span class="o">,</span> <span class="s2">&#34;Noto Color Emoji&#34;</span> <span class="nv">!default</span><span class="p">;</span>
 </code></pre></div><h2 id="the-breadcrumb-case">breadcrumb 麵包屑</h2>
-<p><a href="/docs/5.0/components/breadcrumb//#changing-the-separator">breadcrumb separator</a> 是唯一需要以自己為新變數即 <code>$breadcrumb-divider-flipped</code> — 預設為 <code>$breadcrumb-divider</code>。</p>
+<p><a href="/docs/5.0/components/breadcrumb//#changing-the-separator">breadcrumb separator</a> 是唯一需要為自己定義新變數的情況，即 <code>$breadcrumb-divider-flipped</code> — 預設為 <code>$breadcrumb-divider</code>。</p>
 <h2 id="additional-resources">額外資源</h2>
 <ul>
 <li><a href="https://rtlcss.com/">RTLCSS</a></li>

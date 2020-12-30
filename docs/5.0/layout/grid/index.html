@@ -546,7 +546,7 @@
     <li><a href="#example">範例</a></li>
     <li><a href="#how-it-works">如何運作</a></li>
     <li><a href="#grid-options">網格選項</a></li>
-    <li><a href="#auto-layout-columns">自動佈局的欄</a>
+    <li><a href="#auto-layout-columns">自動排版的欄</a>
       <ul>
         <li><a href="#equal-width">等寬</a></li>
         <li><a href="#setting-one-column-width">設置一欄寬度</a></li>
@@ -584,9 +584,9 @@
         
 
         <h2 id="example">範例</h2>
-<p>Bootstrap 的網格系統使用一系列容器、行、和欄佈局和對齊內容。它用 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a> 建立，並且完全符合響應式。下面是網格系統如何整合的例子及深入瞭解。</p>
+<p>Bootstrap 的網格系統使用一系列容器、行、和欄進行排版和對齊內容。它用 <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a> 建立，並且完全符合響應式。下面是網格系統如何整合的例子及深入瞭解。</p>
 <div class="bd-callout bd-callout-info">
-<strong>還不熟悉 Flex 嗎？</strong><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">閱讀此份 Flex 指引</a> 對於背景、術語、指引、程式碼片段。
+<strong>還不熟悉 Flex 嗎？</strong><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background">閱讀此份 Flex 指引</a> ，關於背景、術語、指引、程式碼片段。
 </div>
 
 <div class="bd-example bd-example-row">
@@ -616,12 +616,12 @@
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
-<p>上面的範例中，我們使用了預定義的網格 class 在所有設備中建立了三個等寬度欄。通過父類 <code>.container</code> 使這些欄位於頁面中心。</p>
+<p>上面的範例中，我們使用了預定義的網格 class 在所有設備中建立了三個等寬度的欄。通過父類 <code>.container</code> 使這些欄位於頁面中心。</p>
 <h2 id="how-it-works">如何運作</h2>
 <p>分解一下，這個網格系統是如何組合在一起並運作的方式：</p>
 <ul>
 <li>
-<p><strong>我們的網格系統支援 <a href="/docs/5.0/layout/breakpoints/">六個響應式斷點</a>。</strong> 斷點主要是基於 <code>min-width</code> 來設置 media queries, 這代表著它們將會影響該斷點及其上的所有斷點（例如，<code>.col-sm-4</code> 適用於<code>sm</code>，<code>md</code>，<code>lg</code>，<code>xl</code> 和 <code>xxl</code>）。 這也意味著您可以通過每個斷點控制容器和列的大小以及行為。</p>
+<p><strong>我們的網格系統支援 <a href="/docs/5.0/layout/breakpoints/">六個響應式斷點</a>。</strong> 斷點主要是基於 <code>min-width</code> 來設置 media queries, 這代表著它們將會影響該斷點及其上的所有斷點（例如，<code>.col-sm-4</code> 適用於<code>sm</code>，<code>md</code>，<code>lg</code>，<code>xl</code> 和 <code>xxl</code>）。 這也意味著您可以通過每個斷點控制容器和欄的大小以及行為。</p>
 </li>
 <li>
 <p><strong>容器水平居中並填滿內容。</strong> 使用 <code>.container</code> 作為響應式的固定寬度, <code>.container-fluid</code> 的寬度在所有的設備上均為 <code>width: 100%</code>, 而響應式容器 (例如. <code>.container-md</code>) 主要用於搭配流體容器以及固定寬度容器的組合。</p>
@@ -633,7 +633,7 @@
 <p><strong>欄的靈活性非常高。</strong> 每一行總共有 12 欄，你可以建立一個任意跨越欄的組合。 Column 代表著要跨越的欄數 (例如：<code>col-4</code> 跨越四欄)。 <code>width</code> 將會以百分比作為基準，因此可以確保尺寸的正常.</p>
 </li>
 <li>
-<p><strong>Gutters 可以響應式也可以自定義</strong> 。<a href="/docs/5.0/layout/gutters/">Gutter 類別可用於任何斷點</a>， 其大小會與<a href="/docs/5.0/utilities/spacing/">margin 和 padding 的間隔</a>相同. 使用 <code>.gx-*</code> 類別來更改水平方向的 Gutters、用 <code>.gy-*</code> 更改垂直方向的 Gutters，或是用 <code>.g-*</code> 更改所有方向的 Gutters。也可以使用 <code>.g-0</code> 來移除所有 Gutters。</p>
+<p><strong>Gutters 可以響應式也可以自定義</strong> 。<a href="/docs/5.0/layout/gutters/">Gutter 類別可用於任何斷點</a>， 其大小會與 <a href="/docs/5.0/utilities/spacing/">margin 和 padding 的間隔</a>相同. 使用 <code>.gx-*</code> 類別來更改水平方向的 Gutters、用 <code>.gy-*</code> 更改垂直方向的 Gutters，或是用 <code>.g-*</code> 更改所有方向的 Gutters。也可以使用 <code>.g-0</code> 來移除所有 Gutters。</p>
 </li>
 <li>
 <p><strong>主要是透過 Sass 變數, maps, 與 mixins 來達到網格系統</strong> 如果您不想在 Bootstrap 中使用預先定義好的網格，那麼你可以考慮使用 <a href="#sass">Grid Sass 原始碼</a> 建立更多客製化的網格系統。我們也包含一些 CSS 自定義屬性，使用這些 Sass 變數，就可以為你提供更大的靈活性。</p>
@@ -722,10 +722,10 @@
     </tr>
   </tbody>
 </table>
-<h2 id="auto-layout-columns">自動佈局的欄</h2>
+<h2 id="auto-layout-columns">自動排版的欄</h2>
 <p>使用特定中斷點欄類方便的確定欄的大小，而不是明確的寬度 class，例如 <code>.col-sm-6</code>。</p>
 <h3 id="equal-width">等寬</h3>
-<p>例如，有兩個網格佈局適用於每個裝置和 viewport，從 <code>xs</code> 到 <code>xl</code>。對每一個你需要的中斷點增加無單位的 class，每一欄將具有相同的寬度。</p>
+<p>例如，有兩個網格排版適用於每個裝置和 viewport，從 <code>xs</code> 到 <code>xl</code>。對每一個你需要的中斷點增加無單位的 class，每一欄將具有相同的寬度。</p>
 <div class="bd-example bd-example-row">
 <div class="container">
   <div class="row">
@@ -770,7 +770,7 @@
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="setting-one-column-width">設置一欄寬度</h3>
-<p>flexbox 網格欄的自動佈局中你可以設置欄的寬度，並且其左右欄將在其周圍自動調整大小。你也可以使用預定義的網格 Class (如下所示)、Grid mixins、或行內寬度。請注意，無論中間欄的寬度，其它欄都將重新調整大小。</p>
+<p>flexbox 網格欄的自動排版中你可以設置欄的寬度，並且其左右欄將在其周圍自動調整大小。你也可以使用預定義的網格 Class (如下所示)、Grid mixins、或行內寬度。請注意，無論中間欄的寬度，其它欄都將重新調整大小。</p>
 <div class="bd-example bd-example-row">
 <div class="container">
   <div class="row">
@@ -969,8 +969,8 @@
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h3 id="row-columns">列與欄</h3>
-<p>使用響應式 <code>.row-cols-*</code> 的 class 可以快速設置並呈現您想要內容與佈局的列數。普通的 <code>.col-*</code> 適用於各個列（例如 <code>.col-md-4</code> ），而行列類是在父層 <code>.row</code> 上設置。使用方式是 <code>.row-cols-auto</code>，您可以為列指定成彈性寬度。</p>
-<p>使用這些行列類可以快速創建基本的網格佈局或控制您的卡片佈局。</p>
+<p>使用響應式 <code>.row-cols-*</code> 的 class 可以快速設置並呈現您想要內容與排版的列數。普通的 <code>.col-*</code> 適用於各個列（例如 <code>.col-md-4</code> ），而行列類是在父層 <code>.row</code> 上設置。使用方式是 <code>.row-cols-auto</code>，您可以為列指定成彈性寬度。</p>
+<p>使用這些行列類可以快速創建基本的網格排版或控制您的卡片排版。</p>
 <div class="bd-example bd-example-row">
 <div class="container">
   <div class="row row-cols-2">
@@ -1121,7 +1121,7 @@
   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></div>
 <h2 id="sass">Sass</h2>
-<p>當使用 Bootstrap Sass 檔時，你可以選擇使用 Sass 變數和 mixins 客製化、語義、和控制頁面配置。我們的預定義網格類使用這些相同的變數和 mixins 提供整套隨時可用的 class 用於響應式排版。</p>
+<p>當使用 Bootstrap Sass 檔時，你可以選擇使用 Sass 變數和 mixins 客製化、語義、和控制頁面配置。我們預定義的網格類別使用這些相同的變數和 mixins 提供整套隨時可用的 class 用於響應式排版。</p>
 <h3 id="variables">變數</h3>
 <p>變數和 sass map 決定了欄的數量、gutter 的寬度、和開始浮動欄的中斷點。我們使用它們產生上文記錄的定義網格 class ，以及用於下列的客製 mixins 類型。</p>
 <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nv">$grid-columns</span><span class="o">:</span>      <span class="mi">12</span><span class="p">;</span>
@@ -1153,7 +1153,7 @@
 <span class="c1">// Get fancy by offsetting, or changing the sort order
 </span><span class="c1"></span><span class="k">@include</span><span class="nd"> make-col-offset</span><span class="p">(</span><span class="nv">$size</span><span class="o">,</span> <span class="nv">$columns</span><span class="o">:</span> <span class="nv">$grid-columns</span><span class="p">);</span>
 </code></pre></div><h3 id="example-usage">使用範例</h3>
-<p>你可以將變數修改你自己的自訂值，或者僅用預設值使用混合類型。下面是使用預設設置創建兩欄佈局的例子。</p>
+<p>你可以將變數修改你自己的自訂值，或者僅用預設值使用混合類型。下面是使用預設設置創建兩欄排版的例子。</p>
 <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="nc">.example-container</span> <span class="p">{</span>
   <span class="k">@include</span><span class="nd"> make-container</span><span class="p">();</span>
   <span class="c1">// Make sure to define this width after the mixin to override
