@@ -624,8 +624,8 @@
     <span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">toastNode</span> <span class="p">=&gt;</span> <span class="k">new</span> <span class="nx">Toast</span><span class="p">(</span><span class="nx">toastNode</span><span class="p">))</span>
 <span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 </code></pre></div><div class="bd-callout bd-callout-warning">
-<h2 id="不兼容的插件">不兼容的插件</h2>
-<p>由於瀏覽器的限制，Bootstrap 的某些插件（即 Dropdown, Tooltip 和 Popover 插件）不能用在帶有 <code>module</code> 類型的 <code>&lt;script&gt;</code> 標籤中，因為它們依賴於Popper。有關此問題的更多資訊，請參見 <a href="https://v8.dev/features/modules#specifiers">這裡</a>。
+<h2 id="不兼容的插件">不相容的插件</h2>
+<p>由於瀏覽器的限制，Bootstrap 的某些插件（即 Dropdown, Tooltip 和 Popover 插件）不能用在具有 <code>module</code> 類型的 <code>&lt;script&gt;</code> 標籤中，因為它們依賴於Popper。有關此問題的更多資訊，請參見 <a href="https://v8.dev/features/modules#specifiers">這裡</a>。
 </div>
 
 <h2 id="dependencies">相依外掛程式</h2>
@@ -685,7 +685,7 @@
 <span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;1&#39;</span><span class="p">)</span> <span class="c1">// Will start sliding to the slide 1 and returns to the caller
 </span><span class="c1"></span><span class="nx">carousel</span><span class="p">.</span><span class="nx">to</span><span class="p">(</span><span class="s1">&#39;2&#39;</span><span class="p">)</span> <span class="c1">// !! Will be ignored, as the transition to the slide 1 is not finished !!
 </span></code></pre></div><h3 id="default-settings">預設設定</h3>
-<p>你可以通過修改插件 <code>Constructor.Default</code> 物件，更改插件的預設設置。</p>
+<p>你可以通過修改插件 <code>Constructor.Default</code> 物件，更改插件的預設設定。</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// changes default for the modal plugin&#39;s `keyboard` option to false
 </span><span class="c1"></span><span class="nx">bootstrap</span><span class="p">.</span><span class="nx">Modal</span><span class="p">.</span><span class="nx">Default</span><span class="p">.</span><span class="nx">keyboard</span> <span class="o">=</span> <span class="kc">false</span>
 </code></pre></div><h2 id="no-conflict-only-if-you-use-jquery">無衝突 (只發生在使用 jQuery 的時候)</h2>
@@ -699,7 +699,7 @@
 <p>當禁用 JavaScript 時，Bootstrap 的插件不會有特別回饋。若你擔心此等情況中的使用者體驗，使用 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/noscript"><code>&lt;noscript&gt;</code></a> 以向你的用戶解釋此情形（以及如何重啟 JavaScript 的方式）和/或添加你自己定義的回饋。</p>
 <div class="bd-callout bd-callout-warning">
 <h5 id="第三方函式庫">第三方函式庫</h5>
-<p><strong>Bootstrap 不支持第三方 JavaScript 函式庫</strong>，如 Prototype 或 jQuery UI。 儘管有 <code>.noConflict</code> 和命名空間的事件，還是可能會出現兼容性的問題，您需要自己修復。
+<p><strong>Bootstrap 不支持第三方 JavaScript 函式庫</strong>，如 Prototype 或 jQuery UI。 儘管有 <code>.noConflict</code> 和命名空間的事件，還是可能會出現相容性的問題，您需要自己修復。
 </div>
 
 <h2 id="sanitizer">清理工具 (Sanitizer)</h2>
