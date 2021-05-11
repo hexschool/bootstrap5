@@ -45,7 +45,7 @@
 
 
 <!-- Bootstrap core CSS -->
-<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<link href="/docs/5.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 
 <link href="/docs/5.0/assets/css/docs.css" rel="stylesheet">
 
@@ -603,16 +603,16 @@
         
 
         <h2 id="tooling-setup">工具設定</h2>
-<p>Boostrap 的建構系統採用 <a href="https://docs.npmjs.com/misc/scripts/">NPM 腳本</a> 。 我們的 <a href="https://github.com/hexschool/bootstrap5/blob/v5.0.0-beta1/package.json">package.json</a> 包含了方便框架工作的方法，包括編譯程式碼、運行測試和更多工作。</p>
+<p>Boostrap 的建構系統採用 <a href="https://docs.npmjs.com/misc/scripts/">NPM 腳本</a> 。 我們的 <a href="https://github.com/hexschool/bootstrap5/blob/v5.0.0/package.json">package.json</a> 包含了方便框架工作的方法，包括編譯程式碼、運行測試和更多工作。</p>
 <p>要使用我們的建構系統並在本地運行我們的文件，你需要一份 Boostrap 原始檔案的副本和 Node.js。遵循以下步驟，然後準備開始：</p>
 <ol>
 <li><a href="https://nodejs.org/en/download/">下載和安裝 Node.js</a>, 我們採用 Node.js 管理我們的從屬附件。</li>
-<li>接著 <a href="https://github.com/twbs/bootstrap/archive/v5.0.0-beta1.zip">下載 Bootstrap 的原始碼</a> 或者拷貝 <a href="https://github.com/hexschool/bootstrap5">Bootstrap 的資料庫</a>。</li>
-<li>瀏覽至 <code>/bootstrap</code> 根目錄跟執行 <code>npm install</code> 從我們本地的 <a href="https://github.com/hexschool/bootstrap5/blob/v5.0.0-beta1/package.json">package.json</a>. 依賴清單中安裝。</li>
+<li>接著 <a href="https://github.com/twbs/bootstrap/archive/v5.0.0.zip">下載 Bootstrap 的原始碼</a> 或者拷貝 <a href="https://github.com/hexschool/bootstrap5">Bootstrap 的資料庫</a>。</li>
+<li>瀏覽至 <code>/bootstrap</code> 根目錄跟執行 <code>npm install</code> 從我們本地的 <a href="https://github.com/hexschool/bootstrap5/blob/v5.0.0/package.json">package.json</a>. 依賴清單中安裝。</li>
 </ol>
 <p>當完成時, 你將能夠執行從命令列所提供的各種指令。</p>
 <h2 id="using-npm-scripts">使用 NPM 腳本</h2>
-<p>我們的 <a href="https://github.com/hexschool/bootstrap5/blob/v5.0.0-beta1/package.json">package.json</a> 為了開發專案包含了大量任務。 執行 <code>npm run</code> 在終端機看到所有的 NPM 腳本。<br>
+<p>我們的 <a href="https://github.com/hexschool/bootstrap5/blob/v5.0.0/package.json">package.json</a> 為了開發專案包含了大量任務。 執行 <code>npm run</code> 在終端機看到所有的 NPM 腳本。<br>
 <strong>主要的任務包括:</strong></p>
 <table class="table">
   <thead>
@@ -659,7 +659,7 @@
 <h2 id="autoprefixer">自動增加前輟詞</h2>
 <p>Bootstrap 採用 (我們的建構過程中包含的) <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> 以便自動在建構時向某些 CSS 屬性增加前輟詞。<br>
 自動增加前輟詞可讓我們每次編寫 CSS 時，無需採用第三版中用的那些 Sass mixins，這樣可以節省我們的時間。</p>
-<p>我們在 GitHub 版本庫中的一份獨立檔案中保存了通過 Autoprefixer 支援的瀏覽器清單。預知明細，請參見 <a href="https://github.com/hexschool/bootstrap5/blob/v5.0.0-beta1/.browserslistrc">.browserslistrc</a>。</p>
+<p>我們在 GitHub 版本庫中的一份獨立檔案中保存了通過 Autoprefixer 支援的瀏覽器清單。預知明細，請參見 <a href="https://github.com/hexschool/bootstrap5/blob/v5.0.0/.browserslistrc">.browserslistrc</a>。</p>
 <h2 id="rtlcss">RTLCSS</h2>
 <p>Bootstrap 使用 <a href="https://rtlcss.com/">RTLCSS</a> 處理已編譯的 CSS 並將其轉換為 RTL – 基本上取代了水平方向和他們相反的屬性 (例如. <code>padding-left</code>)。 它只允許我們單次編輯 CSS 並使用 RTLCSS <a href="https://rtlcss.com/learn/usage-guide/control-directives/">control</a> 和 <a href="https://rtlcss.com/learn/usage-guide/value-directives/">value</a> 指令進行細微調整。</p>
 <h2 id="local-documentation">本地檔</h2>
@@ -687,11 +687,11 @@
       <li class="d-inline-block ms-3"><a href="/docs/5.0/about/overview/">About</a></li>
     </ul>
     <p class="mb-0">Designed and built with all the love in the world by the <a href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/hexschool/bootstrap5/graphs/contributors">our contributors</a>.</p>
-    <p class="mb-0">Currently v5.0.0-beta1. Code licensed <a href="https://github.com/hexschool/bootstrap5/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+    <p class="mb-0">Currently v5.0.0. Code licensed <a href="https://github.com/hexschool/bootstrap5/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
   </div>
 </footer>
 
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
