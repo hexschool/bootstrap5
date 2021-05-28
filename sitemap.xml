@@ -13,6 +13,9 @@
     <loc>https://bootstrap5.hexschool.com/docs/5.0/extend/approach/</loc>
   </url>
   <url>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/utilities/background/</loc>
+  </url>
+  <url>
     <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/blog/</loc>
   </url>
   <url>
@@ -49,6 +52,9 @@
     <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/</loc>
   </url>
   <url>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/features/</loc>
+  </url>
+  <url>
     <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/navbar-fixed/</loc>
   </url>
   <url>
@@ -61,6 +67,12 @@
     <loc>https://bootstrap5.hexschool.com/docs/5.0/layout/gutters/</loc>
   </url>
   <url>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/headers/</loc>
+  </url>
+  <url>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/heroes/</loc>
+  </url>
+  <url>
     <loc>https://bootstrap5.hexschool.com/docs/5.0/extend/icons/</loc>
   </url>
   <url>
@@ -68,6 +80,9 @@
   </url>
   <url>
     <loc>https://bootstrap5.hexschool.com/docs/5.0/getting-started/javascript/</loc>
+  </url>
+  <url>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/jumbotron/</loc>
   </url>
   <url>
     <loc>https://bootstrap5.hexschool.com/docs/5.0/about/license/</loc>
@@ -82,7 +97,13 @@
     <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/navbars/</loc>
   </url>
   <url>
-    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/offcanvas/</loc>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/components/offcanvas/</loc>
+  </url>
+  <url>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/offcanvas-navbar/</loc>
+  </url>
+  <url>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/getting-started/parcel/</loc>
   </url>
   <url>
     <loc>https://bootstrap5.hexschool.com/docs/5.0/helpers/position/</loc>
@@ -104,6 +125,9 @@
   </url>
   <url>
     <loc>https://bootstrap5.hexschool.com/docs/5.0/customize/sass/</loc>
+  </url>
+  <url>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/sidebars/</loc>
   </url>
   <url>
     <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/sign-in/</loc>
@@ -139,19 +163,19 @@
     <loc>https://bootstrap5.hexschool.com/docs/5.0/layout/z-index/</loc>
   </url>
   <url>
-    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/blog-rtl/</loc>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/carousel-rtl/</loc>
   </url>
   <url>
-    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/carousel-rtl/</loc>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/blog-rtl/</loc>
   </url>
   <url>
     <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/dashboard-rtl/</loc>
   </url>
   <url>
-    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/album-rtl/</loc>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/checkout-rtl/</loc>
   </url>
   <url>
-    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/checkout-rtl/</loc>
+    <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/album-rtl/</loc>
   </url>
   <url>
     <loc>https://bootstrap5.hexschool.com/docs/5.0/examples/cheatsheet-rtl/</loc>
