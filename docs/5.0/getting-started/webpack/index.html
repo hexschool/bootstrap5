@@ -628,7 +628,7 @@
 <p>首先，創建您自己的 <code>_custom.scss</code> 並使用它來覆蓋 <a href="/docs/5.0/customize/sass/">自定義變數</a>。然後，使用你主要的 sass 文件導入你的自定義變數，接下來再載入 Bootstrap：</p>
 <div class="highlight"><pre class="chroma"><code class="language-scss" data-lang="scss"><span class="k">@import</span> <span class="s2">&#34;custom&#34;</span><span class="p">;</span>
 <span class="k">@import</span> <span class="s2">&#34;~bootstrap/scss/bootstrap&#34;</span><span class="p">;</span>
-</code></pre></div><p>要讓 Bootstrap 進行編譯，先確認你安裝並使用了必要的 loader： <a href="https://github.com/webpack-contrib/sass-loader">sass-loader</a>、 <a href="https://github.com/webpack-contrib/postcss-loader">postcss-loader</a> 搭配 <a href="https://github.com/postcss/autoprefixer#webpack">Autoprefixer</a>。以最精簡的配置來說，你的 webpack 配置檔應包括此規則或類似的設置：</p>
+</code></pre></div><p>要讓 Bootstrap 進行編譯，先確認你安裝並使用了必要的 loader： <a href="https://github.com/webpack-contrib/sass-loader">sass-loader</a>、 <a href="https://github.com/webpack-contrib/postcss-loader">postcss-loader</a> 搭配 <a href="https://github.com/postcss/autoprefixer#webpack">Autoprefixer</a>。以最精簡的設定來說，你的 webpack 設定檔應包括此規則或類似的設定：</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// ...
 </span><span class="c1"></span><span class="p">{</span>
   <span class="nx">test</span><span class="o">:</span> <span class="sr">/\.(scss)$/</span><span class="p">,</span>
@@ -662,7 +662,7 @@
 </span></code></pre></div><h3 id="importing-compiled-css">導入編譯好的 CSS</h3>
 <p>另外，你可以將此程式碼加到你專案的進入點：</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">import</span> <span class="s1">&#39;bootstrap/dist/css/bootstrap.min.css&#39;</span><span class="p">;</span>
-</code></pre></div><p>這種情況下，您可以使用現有的 <code>css</code> 而無需對 webpack 配置進行任何特殊修改，除此之外不需要 <code>sass-loader</code> 只需要 <a href="https://github.com/webpack-contrib/style-loader">style-loader</a> 和 <a href="https://github.com/webpack-contrib/css-loader">css-loader</a>。</p>
+</code></pre></div><p>這種情況下，您可以使用現有的 <code>css</code> 而無需對 webpack 設定進行任何特殊修改，除此之外不需要 <code>sass-loader</code> 只需要 <a href="https://github.com/webpack-contrib/style-loader">style-loader</a> 和 <a href="https://github.com/webpack-contrib/css-loader">css-loader</a>。</p>
 <div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="c1">// ...
 </span><span class="c1"></span><span class="nx">module</span><span class="o">:</span> <span class="p">{</span>
   <span class="nx">rules</span><span class="o">:</span> <span class="p">[</span>
